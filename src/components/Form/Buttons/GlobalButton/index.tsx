@@ -10,6 +10,7 @@ interface Props {
   color?: string;
   colorText?: string;
   onPress?: () => void;
+  onLongPress?: () => void;
 }
 
 export function GlobalButton({
@@ -19,6 +20,7 @@ export function GlobalButton({
   color,
   colorText,
   onPress,
+  onLongPress,
   ...rest
 }: Props) {
   const theme = useTheme();
@@ -30,6 +32,7 @@ export function GlobalButton({
       color={color || theme?.colors.primary4}
       disabled={disabled}
       style={{ opacity: disabled === false || loading === true ? 1 : 0.5 }}
+      onLongPress={onLongPress}
     >
       {loading ? (
         <ActivityIndicator color={theme?.colors.secondary4} size="small" />

@@ -3,7 +3,7 @@
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export const urlBackend = "http://10.109.0.24:8080/api/client";
+export const urlBackend = "http://ip-user:8080/api/client";
 
 const apiAuth = axios.create({
   baseURL: urlBackend,

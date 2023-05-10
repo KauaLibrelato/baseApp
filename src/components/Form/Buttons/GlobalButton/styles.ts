@@ -6,8 +6,7 @@ export const Container = styled.TouchableOpacity<{
   color?: string;
 }>`
   width: 100%;
-  background-color: ${({ color, theme }: any) =>
-    color ?? theme.colors.primary4};
+  background-color: ${({ color, theme }: any) => color ?? theme.colors.primary};
   justify-content: center;
   align-items: center;
   border-radius: 4px;

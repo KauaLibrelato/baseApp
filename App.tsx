@@ -11,6 +11,7 @@ import AppLoading from "expo-app-loading";
 import { NativeBaseProvider } from "native-base";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { LogBox } from "react-native";
+import FlashMessage from "react-native-flash-message";
 import { Routes } from "./src/routes";
 import { theme } from "./src/styles/theme";
 // import { AuthProvider } from "./src/hooks/AuthProvider";
@@ -30,6 +31,13 @@ export default function App() {
   }
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
+      <FlashMessage
+        position="top"
+        titleStyle={{ fontFamily: "DMSans_700Bold", fontSize: 16 }}
+        textStyle={{ fontFamily: "DMSans_500Medium", fontSize: 14 }}
+        duration={1000}
+        style={{ marginTop: 33 }}
+      />
       <ThemeProvider theme={theme}>
         <NativeBaseProvider>
           {/* <AuthProvider> */}

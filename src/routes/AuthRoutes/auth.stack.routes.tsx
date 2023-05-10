@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Teste } from "../../screens/exampleInput";
+import { Teste } from "../../screens";
 
 const { Navigator, Screen } = createStackNavigator();
 

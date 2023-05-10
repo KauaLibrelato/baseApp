@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const urlBackend = "http://10.109.0.24:8080/api/client";
+export const urlBackend = "http://ip-user:8080/api/client";
 
 const api = axios.create({
   baseURL: urlBackend,
